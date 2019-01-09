@@ -1,0 +1,297 @@
+/*
+  Create by Citrusbug
+  Title : Style File
+  Description :  This page containes all style sheet
+  Date : 09-01-2018
+  Time : 12:20 PM
+*/
+
+// Import the scc or google font 
+@import "~LessConstants";
+
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700") media-types;
+body {font-family: 'Source Sans Pro', sans-serif!important; font-weight: normal;}
+// Write css for the entire page
+.course-admin-contents {
+  font-family: @main-font !important;
+  padding-top: 35px !important;
+  padding-bottom: 26px !important;
+
+  .contents-left-heading {
+    font-size: 16px;
+    line-height: 1.19;
+    color: @gull-grey !important;
+    font-weight: 600;
+  }
+
+  .contents-right-heading {
+    float: right;
+    color: @atlas-blue;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.contents-table-container {
+  font-family: @main-font !important;
+
+  .table {
+    border: none;
+
+    thead tr th {
+      background-color: @white;
+      color: @blue-zodiac !important;
+      font-size: 14px;
+      font-weight: 600 !important;
+      line-height: 1.14;
+      text-transform: uppercase;
+    }
+
+    tbody tr {
+      cursor: pointer;
+
+      .content .header .content {
+        color: @atlas-blue;
+        font-size: 16px;
+        line-height: 1.3;
+        font-weight: 400;
+      }
+
+      .content .header .sub.header,
+      .start-date .header .sub.header,
+      .end-date .header .sub.header {
+        color: @manatee;
+        line-height: 1.23;
+        font-size: 13px;
+        margin-top: 3px;
+      }
+
+      .status, .views {
+        color: @blue-zodiac;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 500;
+      }
+
+      .status {
+        text-transform: capitalize;
+
+        .indicators {
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          background-color: @gull-grey;
+          border-radius: 100%;
+          vertical-align: middle;
+          margin-right: 10px;
+
+          &.green {
+            background-color: @malachite;
+          }
+        }
+      }
+
+      .start-date .header .content,
+      .end-date .header .content {
+        color: @blue-zodiac;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.3;
+      }
+
+      .icon-opacity {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+.chartModel{
+  width: 896px;
+  min-height: 620px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(57, 64, 82, 0.1);
+  background-color: #ffffff;
+  margin-top: -100px !important;
+  .no-data h3{padding: 20px 40px}
+  .ui.attached.segment {border : none !important}
+  .ui.secondary.pointing.menu { padding:20px 20px 0 20px; border-bottom:1px solid #e0e0e5; font-family: 'Source Sans Pro', sans-serif;}
+  .ui.secondary.pointing.menu .item {color: #96a0b0;    font-size: 15px;}
+  .ui.secondary.pointing.menu .active.item {color: #3365ff; border-color:#3365ff}
+  .ui.segment {background:transparent; clear:both; font-family: 'Source Sans Pro', sans-serif; margin: 0;
+    padding: 0; width: 100%;}
+  .chatModelClose { width:12px; height: 12px;top: 25px;right: 30px;cursor: pointer; z-index: 999; position: absolute;z-index: 1;opacity: 10; }
+  .video-statictics-graph { 
+    .videoLable{
+      width: 129px;
+      height: 19px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.19;
+      letter-spacing: normal;
+      color: #394052;
+      margin: 44px 38px 44px 38px
+    }
+    .chartjs-render-monitor {
+      padding: 0px 38px 90px 38px;
+    }
+
+  }
+  .QuizestatisticsStyle{
+    
+    .QuizestatisticsList{
+      float: left;
+      width:39.2%;
+      background: #fff; 
+      overflow-y: scroll;
+      height: 556px;
+    }
+    .Quiz-Analytics {
+       width: auto; height: auto; margin: 0; padding: 20px 20px 16px 20px;
+    }
+    .quizeLi{
+       width: auto; 
+       height: auto; 
+       border-bottom: 1px solid #dbdee7; 
+       background: #fff;
+      
+    }
+    .quizeLi.active{
+      background-color: #f6f7fb;
+    }
+    .quizeLi .QuizeHeader {
+      font-size: 16px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.19;
+      letter-spacing: normal;
+      color: #394052;
+      width: auto; height: auto; 
+      margin: 0 0 10px 0; 
+      padding: 0; 
+      display: block; 
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    .quizeLi p{
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.1px;
+      color: #888c98;
+      width: auto; 
+      height: auto; 
+      margin: 0; 
+      padding: 0px 0 10px 0; 
+      font-size:12px; 
+      color:#888c98;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .GraphStatistics{
+      width: 60.8%;
+      opacity: 0.5;
+      float: left;
+      padding:20px 20px 30px 20px;
+      border-left: 1px solid #e0e0e5;
+
+      .QuizDetail {
+        width: 60.8%;
+        margin: 0 0 10px 0;
+        .quizLabel{
+          width: 100%;
+          height: 19px;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 16px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.19;
+          letter-spacing: normal;
+          color: #394052;
+          float: left;
+          display: block; 
+          margin: 0 0 10px 0; 
+          
+        }
+        .quizDetail{
+          font-size: 12px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: 0.1px;
+          text-align: center;
+          color: #888c98;
+          clear:both; 
+          text-align: left; 
+          width:auto; 
+          height: auto; 
+          font-family: 'Source Sans Pro', sans-serif;
+        }
+        .quizAnswer{
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 12px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: 0.1px;
+          color: #888c98;
+          width:auto; height: auto; 
+          display: block; 
+          
+        }
+        .quizAnswer.answerTrue{
+          font-weight: 700 !important;   
+          color: #4d5771;
+        }
+
+        .quizAnswer.answerTrue .true {
+          width: 8px;
+          height: 8px;
+          border: solid 1px #ffffff;
+          background-color: #00d563;
+          border-radius: 100%;
+          display: inline-block;
+          vertical-align: middle;
+          
+        }
+      }
+    }
+  }
+}
+
+.chartModel .QuizestatisticsStyle .GraphStatistics {opacity: 1;}
+
+
+// .chartModel .ui.secondary.pointing.menu { padding:20px 20px 0 20px; border-bottom:1px solid #e0e0e5; font-family: 'Source Sans Pro', sans-serif!important;}
+// .chartModel .ui.secondary.pointing.menu .item {color: #96a0b0;    font-size: 15px;}
+// .chartModel .ui.secondary.pointing.menu .active.item {color: #3365ff; border-color:#3365ff}
+
+// .chartModel .ui.segment {background:transparent; clear:both; font-family: 'Source Sans Pro', sans-serif!important; margin: 0;
+//     padding: 0; width: 100%;}
+// .chartModel .QuizestatisticsStyle .quizeLi { width: auto; height: auto; border-bottom: 1px solid #dbdee7; background: #fff;}
+
+// .chartModel .QuizestatisticsStyle .Quiz-Analytics{ width: auto; height: auto; margin: 0; padding: 20px 20px 16px 20px;}
+// .chartModel .QuizestatisticsStyle .quizeLi .QuizeHeader{ width: auto; height: auto; margin: 0 0 10px 0; padding: 0; display: block; font-family: 'Source Sans Pro', sans-serif!important;}
+// .chartModel .QuizestatisticsStyle .quizeLi p{ width: auto; height: auto; margin: 0; padding: 0px 0 10px 0; font-size:12px; color:#888c98;font-family: 'Source Sans Pro', sans-serif!important}
+
+// .chartModel .QuizestatisticsStyle .GraphStatistics .QuizDetail .quizLabel { font-size: 16px;  font-weight: 600;   font-style: normal;  font-stretch: normal;  line-height: 1.19;  letter-spacing: normal;  color: #394052; font-family: 'Source Sans Pro', sans-serif!important; display: block; margin: 0 0 10px 0; font-family: 'Source Sans Pro', sans-serif!important}
+//.chartModel .QuizestatisticsStyle .GraphStatistics .QuizDetail .quizDetail { clear:both; font-size: 12px;  font-weight: normal;  font-style: normal;  font-stretch: normal;  line-height: normal;  letter-spacing: 0.1px;  text-align: left;  color: #888c98; width:auto; height: auto; font-family: 'Source Sans Pro', sans-serif!important}
+//.chartModel .QuizestatisticsStyle .GraphStatistics .QuizDetail .quizAnswer {  font-size: 12px;  font-weight: normal;  font-style: normal;  font-stretch: normal;  line-height: normal;  letter-spacing: 0.1px;  color: #888c98;width:auto; height: auto; display: block; font-family: 'Source Sans Pro', sans-serif!important}
+//.chartModel .QuizestatisticsStyle .GraphStatistics .QuizDetail .quizAnswer.answerTrue {    font-weight: 700 !important;    color: #4d5771;}
+
+
+
+.ui.modal i.icon.close:before { content: ''!important;}
